@@ -14,4 +14,11 @@
     <string name="favourites_fragment">Favourites Fragment</string>
     <string name="profile_fragment">Profile Fragment</string>
     <string name="about_app_fragment">About App Fragment</string>
+    <string name="name_aman_kumar_singh">Name: Aman Kumar Singh</string>
+    <string name="education_btech_ece_ctae_udaipur">Education: BTech ECE(CTAE Udaipur)</string>
+    <string name="contact_8005715846">Contact: 8005715846</string>
+    <string name="email_itsamankrsingh_gmail_com">Email: itsamankrsingh@gmail.com</string>
+    <string name="about_developer">About: A technology enthusiast. Beginner in Android Development.
+        Currently looking for an internship.</string>
+    <string name="list_item">List Item</string>
 </resources>
