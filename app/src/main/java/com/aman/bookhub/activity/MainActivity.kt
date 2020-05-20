@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var toolbar: androidx.appcompat.widget.Toolbar
     lateinit var frameLayout: FrameLayout
     lateinit var navigationView: NavigationView
-    var previousMenuItem: MenuItem?=null
+    var previousMenuItem: MenuItem? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,16 +48,16 @@ class MainActivity : AppCompatActivity() {
 
         navigationView.setNavigationItemSelectedListener {
 
-            if(previousMenuItem!=null){
-                previousMenuItem?.isChecked=false
+            if (previousMenuItem != null) {
+                previousMenuItem?.isChecked = false
             }
-            it.isChecked=true
-            it.isCheckable=true
-            previousMenuItem=it
+            it.isChecked = true
+            it.isCheckable = true
+            previousMenuItem = it
 
             when (it.itemId) {
                 R.id.dashboard -> {
-                   openDashboard()
+                    openDashboard()
                     drawerLayout.closeDrawers()
                 }
 
@@ -123,12 +123,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        val frag=supportFragmentManager.findFragmentById(R.id.frame)
+        val frag = supportFragmentManager.findFragmentById(R.id.frame)
 
-        when (frag){
+        when (frag) {
             !is DashboardFragment -> openDashboard()
 
-            else->super.onBackPressed()
+            else -> super.onBackPressed()
         }
     }
 }

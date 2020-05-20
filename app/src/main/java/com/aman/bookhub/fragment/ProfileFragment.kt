@@ -14,7 +14,7 @@ import com.aman.bookhub.R
  */
 class ProfileFragment : Fragment() {
 
-    lateinit var contact:TextView
+    lateinit var contact: TextView
     lateinit var email: TextView
 
     override fun onCreateView(
@@ -22,14 +22,13 @@ class ProfileFragment : Fragment() {
         savedInstanceState: Bundle?
 
 
-
     ): View? {
         // Inflate the layout for this fragment
 
-        val view=inflater.inflate(R.layout.fragment_profile, container, false)
+        val view = inflater.inflate(R.layout.fragment_profile, container, false)
 
-        contact=view.findViewById(R.id.txtContact)
-        email=view.findViewById(R.id.txtEmail)
+        contact = view.findViewById(R.id.txtContact)
+        email = view.findViewById(R.id.txtEmail)
 
 
 

@@ -21,4 +21,5 @@
     <string name="about_developer">About: A technology enthusiast. Beginner in Android Development.
         Currently looking for an internship.</string>
     <string name="list_item">List Item</string>
+    <string name="check_internet">Check Internet</string>
 </resources>

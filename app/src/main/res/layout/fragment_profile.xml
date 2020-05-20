@@ -9,76 +9,74 @@
     <ImageView
         android:id="@+id/imgProfileDali"
         android:layout_width="match_parent"
-        android:padding="2dp"
-        android:layout_margin="8dp"
         android:layout_height="250dp"
-        android:src="@drawable/dali"
-        />
+        android:layout_margin="8dp"
+        android:padding="2dp"
+        android:src="@drawable/dali" />
 
     <TextView
         android:id="@+id/txtName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/imgProfileDali"
-        android:text="@string/name_aman_kumar_singh"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginTop="20dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="8dp"
+        android:text="@string/name_aman_kumar_singh"
         android:textColor="#ffffff"
-        />
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/txtEducation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/txtName"
-        android:text="@string/education_btech_ece_ctae_udaipur"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginTop="20dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="8dp"
+        android:text="@string/education_btech_ece_ctae_udaipur"
         android:textColor="#ffffff"
-        />
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/txtContact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/txtEducation"
-        android:text="@string/contact_8005715846"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginTop="20dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="8dp"
+        android:text="@string/contact_8005715846"
         android:textColor="#ffffff"
-        />
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/txtEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/txtContact"
-        android:text="@string/email_itsamankrsingh_gmail_com"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginTop="20dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="8dp"
+        android:text="@string/email_itsamankrsingh_gmail_com"
         android:textColor="#ffffff"
-        />
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/txtAboutDeveloper"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/txtEmail"
-        android:text="@string/about_developer"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginTop="20dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="8dp"
+        android:text="@string/about_developer"
         android:textColor="#ffffff"
-        />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>
