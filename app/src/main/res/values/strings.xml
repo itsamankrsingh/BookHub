@@ -26,4 +26,5 @@
     <string name="name_of_author">Name Of Author</string>
     <string name="rs_299">Rs. 299</string>
     <string name="add_to_favourites">Add To Favourites</string>
+    <string name="remove_favourites">Remove From Favourites</string>
 </resources>
