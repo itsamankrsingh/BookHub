@@ -113,7 +113,6 @@ class DescriptionActivity : AppCompatActivity() {
                                 txtBookDesc.text.toString(),
                                 bookImageUrl
                             )
-
                             val checkFav = DBAsyncTask(applicationContext, bookEntity, 1).execute()
                             val isFav = checkFav.get()
 
@@ -237,34 +236,32 @@ class DescriptionActivity : AppCompatActivity() {
     }
 
 
-    class DBAsyncTask(val contex: Context, val bookEntity: BookEntity, val mode: Int) :
+    class DBAsyncTask(val context: Context, val bookEntity: BookEntity, val mode: Int) :
         AsyncTask<Void, Void, Boolean>() {
-
         /*
-        Mode 1 -> Check DB if book is favourites or not
-        Mode 2-> Save the Book into DB as favourites
-        Mode 3->Remove the book from favourites
-         */
-
-        val db = Room.databaseBuilder(contex, BookDatabase::class.java, "book-db").build()
-
-        override fun doInBackground(vararg params: Void?): Boolean {
-
+        Mode 1 -> Check DB if the book is favourite or not
+        Mode 2 -> Save the book into DB as favourite
+        Mode 3 -> Remove the favourite book
+        * */
+        val db = Room.databaseBuilder(context, BookDatabase::class.java, "books-db").build()
+        override fun doInBackground(vararg p0: Void?): Boolean {
             when (mode) {
                 1 -> {
-                    //ckeck db if book is im favourites or not
-                    val book: BookEntity? = db.bookDao().getBookById(bookEntity.book_id.toString())
+// Check DB if the book is favourite or not
+                    val book: BookEntity? = db.bookDao().getBookById(
+                        bookEntity.book_id.toString()
+                    )
                     db.close()
                     return book != null
                 }
                 2 -> {
-                    //add the book to favourites
+// Save the book into DB as favourite
                     db.bookDao().insertBook(bookEntity)
                     db.close()
                     return true
                 }
                 3 -> {
-                    //remove the book from favourites
+// Remove the favourite book
                     db.bookDao().deleteBook(bookEntity)
                     db.close()
                     return true
@@ -272,7 +269,5 @@ class DescriptionActivity : AppCompatActivity() {
             }
             return false
         }
-
     }
 }
-
